@@ -1,0 +1,21 @@
+container{
+  margin: 50px 100px;
+  h1{
+    color:#ffffff;
+    background-color:#284b63;} 
+  h2{
+     color:#ffffff;
+    background-color:#3c6e71;}
+  h3{
+    color:#ffffff;
+    background-color:#284b63;}
+  h4{
+    color:#ffffff;
+    background-color:#284b63;}
+  a:link{
+    color:#3c6e71;}
+  a:hover{
+    color:#353535;}
+  a:visited{
+    color:#284b63;}
+}
