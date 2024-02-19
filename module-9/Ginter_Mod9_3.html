@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSD 340 Development with HTML and CSS</title>
+    <meta name="description" content="Module 2.2 Assignment, with four paragraphs of an introduction" />
+    <meta http-equiv="author" content="Jeremy Ginter" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <link rel="stylesheet" href="Ginter_Mod9_3.css" />
+    <script>
+      var firstVariable = "Sam";
+      var secondVariable= "darkness";
+      var thirdVariable= "shadow";
+      var fourthVariable= "Frodo";
+    </script>
+    
+  </head>
+  <body>
+    <div id="container">
+      <h1>Assignment 9.3: JavaScript - Part 1</h1>
+      <h2>Jeremy Ginter Introduction</h2>
+      <p class="intro">
+        My name is Jeremy Ginter. I am 22 years old, and I live in Vancouver, WA. 
+        I currently work at Home Depot, and have worked there for just over two years. 
+      </p>
+      
+      <p>
+        In my free time, I enjoy doing pretty much anything in nature. 
+        Living in the Pacific Northwest, it's hard not to take advantage of the endless supply of hiking trails.
+        I also enjoy going mountain bike riding, and kayaking when the weather allows. 
+      </p>
+      
+      <p>
+        My family consists of my Father, Mother, and younger Sister. We also have Two Dogs and a Cat. 
+        My Dog is an Australian Shepherd named Whitney, and my sister's cat and dog are named Goose and Finn respectively. 
+      </p>
+      
+      
+     
+      <p>
+        I started working at Home Depot as a cashier. I have since been promoted to Head Cashier.
+        This is essentially a shift lead possition, and it means I am responsible for the schedule and any problems the cashiers face throughout the day.
+        This also means I have to walk throughout the store constantly, which can be rather tiring.
+      </p>
+      <hr />
+      <p>
+        Sam's Speech:
+      </p>
+      
+      <p>
+        <span id="first">____</span>: I know! It’s all wrong!
+        By rights we shouldn’t even be here.
+        But we are.
+        It's like in the great stories Mr. Frodo.
+        The ones that really mattered.<br />
+        Full of <span id="second">____</span> and danger they were,
+        and sometimes you didn't want to know the end.
+        Because how could the end be happy.
+        How could the world go back to the way it was when so much bad happened.<br />
+        But in the end, it's only a passing thing, this <span id="third">____</span>.
+        Even darkness must pass.
+        A new day will come.
+        And when the sun shines it will shine out the clearer.
+        Those were the stories that stayed with you.
+        That meant something.
+        Even if you were too small to understand why. <br />
+        But I think, Mr. Frodo, I do understand.
+        I know now.
+        Folk in those stories had lots of chances of turning back only they didn’t
+        Because they were holding on to something.<br />
+        <span id="fourth">____</span>.: What are we holding on to, Sam?<br />
+        Sam : That there’s some good in this world, Mr. Frodo. And it’s worth fighting for.
+      </p>
+      <p>
+        <button type="button" 
+        onclick="document.getElementById('first').innerHTML = firstVariable">Sam</button>   
+        
+        <button type="button" 
+        onclick="document.getElementById('second').innerHTML = secondVariable">darkness</button>
+        
+        <button type="button" 
+        onclick="document.getElementById('third').innerHTML = thirdVariable">shadow</button>
+        
+        <button type="button" 
+        onclick="document.getElementById('fourth').innerHTML = fourthVariable">Frodo</button> <br />
+      
+      </p>
+      
+      <hr />
+      <address>
+        <a href="https://www.bellevue.edu">Bellevue University</a>
+        <p>1000 Galvin Road South</p>
+        <p>Bellevue, Nebraska 68005</p>
+      </address>
+    </div>  
+
+  </body>
+</html>
