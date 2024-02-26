@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+      var isMoon1 = true;
+      function changeImage1(){
+        var img =document.getElementById("cave")
+        img.src="cave_01.jpg"
+        var radio = document.getElementById("radio2");
+        radio.checked = false;
+      }
+      function changeImage2(){
+        var img =document.getElementById("cave")
+        img.src="cave_02.jpg"
+        var radio = document.getElementById("radio1");
+        radio.checked = false;
+      }
+      function changeMoon(){
+        if(isMoon1 == true){
+          var img =document.getElementById("moon")
+          img.src="moon_02.jpg"
+          isMoon1 = false;
+        }else{
+          var img =document.getElementById("moon")
+          img.src="moon_01.jpg"
+          isMoon1 = true;
+        }
+      }
+    </script>
+  </head>
+  <body>
+      <h1>Assignment 10.3: JavaScript - Part 2</h1>
+      <img id="cave" src = "cave_01.jpg">
+      <br />
+      <p>Select Which Image to Display Below:</p>
+      <input type="radio" id="radio1" onclick="changeImage1();">Cave #1</input>
+      <br />
+      <input type="radio" id="radio2" onclick="changeImage2();">Cave #2</input>
+      <br />
+      <br />
+      <img id="moon" onclick="changeMoon();"src = "moon_01.jpg">
+      <br />
+      <p>Click the Image to Change It!</p>
+  </body>
+</html>
