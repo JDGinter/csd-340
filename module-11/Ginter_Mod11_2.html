@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    
+    <script>
+      let toDo = [];
+      let itemCount = 0;
+      function submitToDo(){
+        let Input = document.getElementById("text");
+        const inputValue = Input.value;
+        
+        toDo.push(inputValue);
+        itemCount = itemCount + 1;
+      }
+      
+      function display(){
+        let list = document.getElementById("toDoList");
+        toDoList.innerHTML = ' ';
+        for(i = 0; i < toDo.length; ++i){
+          let li = document.createElement('li');
+          
+          li.innerText = toDo[i];
+          list.appendChild(li);
+        }
+       
+       
+      }
+      function listDelete(){
+        toDo.pop();
+        display();
+      }
+    </script>
+  </head>
+  <body>
+      <h1>Assignment 11.2: JavaScript - Part 3</h1>
+      
+      <p>Enter the First To Do List item in the Text Box below. Once entered, click the Add button to add it to your List. Once Added, click Display to View your Items.</p>
+      <input type="text" id="text">
+      <button id="Add" onclick="submitToDo();" type="button">Add</button>
+      <button id="delete" onclick="listDelete();" type="button">Delete Last Entry</button>
+      <button id="display" onclick="display();" type="button">Display</button>
+      <hr>
+      <ul id="toDoList"></ul>
+  </body>
+</html>
