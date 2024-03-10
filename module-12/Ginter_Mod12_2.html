@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link href="Ginter_Mod12_2.css" rel="stylesheet">
+    <script>
+      const books = [ "The Hobbit","LOTR: Fellowship of the Ring","LOTR: The Two Towers","LOTR: Return of the King",
+        "The Chronicles of Narnia","Dune","Harry Potter","Dracula","Moby-Dick", "The Art of War"];
+        function topToBottom(){
+          var bookList = document.getElementById('list');
+          list.innerHTML = '';
+          listReversed.innerHTML = '';
+          for (var i = 0; i < books.length; i++){
+            var li = document.createElement('li');
+            li.textContent = books[i];
+            list.appendChild(li);
+          }
+        }
+        function bottomToTop(){
+          var bookList = document.getElementById('listReversed');
+          list.innerHTML = '';
+          listReversed.innerHTML = '';
+          var reverse = 9;
+          for (var i = 0; i < books.length; i++){
+            var li = document.createElement('li');
+            li.textContent = books[reverse];
+            listReversed.appendChild(li);
+            reverse = reverse - 1;
+            if (reverse == -1){
+              reverse = 9
+            }
+          }
+        }
+      
+    </script>
+    
+    
+    
+    
+  </head>
+  <main>
+    <container>
+      <h1>Assignment 12.2: JavaScript - Part 4</h1>
+      <left>
+        <h3>Top 10 Favorite Books</h3>
+        <button type="button" onclick="topToBottom()">Top to Bottom</button>
+        <button type="button" onclick="bottomToTop()">Bottom to Top</button>
+        <ol id="list"></ol>
+        <ol reversed="true" id="listReversed"></ol>
+      </left>
+      <right>
+        <h3>5 Things I've Learned Since The Course Started</h3>
+        <ul>
+          <li>How to Change the Color of Text.</li>
+          <li>How to Change the Background Color.</li>
+          <li>How to Create Lists.</li>
+          <li>How to place groups of texts next to each other.</li>
+          <li>How to insert Links.</li>
+        </ul>
+      </right>
+      <last>
+        <a href="https://jdginter.github.io/csd-340/">Index Page</a>
+      </last>
+    </containter>
+  </main>
+</html>
