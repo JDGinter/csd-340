@@ -1,0 +1,90 @@
+#nav1{
+  display:inline;
+}
+#nav2{
+  display:inline;
+}
+#nav3{
+  display:inline;
+}
+
+#dash1{
+  display:inline;
+  padding-left: 30px;
+  padding-right:30px;
+}
+#dash2{
+  display:inline;
+   padding-left: 30px;
+  padding-right:30px;
+}
+#nav{
+  background-color: #35403C;
+}
+body{
+  background-color: #427A66;
+}
+h1{
+  color:#0AFAA2;
+  font-family: Verdana;
+  font-size: 46px;
+}
+h2{
+  color:#0AFAA2;
+  font-family: Verdana;
+  padding-left: 40px;
+  font-size: 36px;
+}
+p{
+  font-family: Verdana;
+  padding-left: 40px;
+  display:inline;
+  
+  font-size: 18px;
+  
+}
+hr{
+  background-color:#2BCF93;
+  height: 3px
+  
+}
+
+#img1{
+  display:inline;
+  float:right;
+  
+  height: 400px;
+  width:300px;
+  
+}
+#About{
+  padding-bottom: 500px;
+}
+
+#img2{
+  display:inline;
+float:right;
+  
+  height: 400px;
+  width:300px;
+  
+}
+#Hobbies{
+  padding-bottom: 500px;
+}
+
+#img3{
+  height: 550px;
+  width:1000px;
+   
+}
+#centeredImg{
+  padding-top: 100px;
+   text-align: center;
+}
+a{
+  color:#0AFAA2;
+}
+a:hover{
+  text-decoration: none;
+}
